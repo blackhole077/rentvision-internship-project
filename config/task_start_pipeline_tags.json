@@ -1,0 +1,6 @@
+{
+    "[UPL]": "upload_pipeline",
+    "[MFV]": "multi_floor_pipeline",
+    "[MCV]": "multi_floor_pipeline",
+    "default": "preprocess_pipeline"
+}
