@@ -22,7 +22,7 @@ def generate_log_file_name():
         new file is created.
     """
 
-    file_name = "logs/hercules_pipeline_log_file.log"
+    file_name = "logs/rajagopal_pipeline_log_file.log"
     if not os.path.exists(file_name):
         with open(file_name, 'w') as _file:
             pass
