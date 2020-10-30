@@ -1,0 +1,47 @@
+[
+    {
+        "name": "pipeline_name_one",
+        "input_queue": "input_queue_one",
+        "output_queue": "output_queue_one",
+        "error_queue": "task_cleanup_queue",
+        "process_job": "job_functions.job_one",
+        "num_workers": 2,
+        "timeout_duration": 30
+    },
+    {
+        "name": "pipeline_name_two",
+        "input_queue": "output_queue_one",
+        "output_queue": "output_queue_two",
+        "error_queue": "task_cleanup_queue",
+        "process_job": "job_functions.job_two",
+        "num_workers": 2,
+        "timeout_duration": 30
+    },
+    {
+        "name": "pipeline_name_three",
+        "input_queue": "output_queue_two",
+        "output_queue": "output_queue_three",
+        "error_queue": "task_cleanup_queue",
+        "process_job": "job_functions.job_three",
+        "num_workers": 1,
+        "timeout_duration": 30
+    },
+    {
+        "name": "pipeline_name_four",
+        "input_queue": "output_queue_three",
+        "output_queue": "output_queue_four",
+        "error_queue": "task_cleanup_queue",
+        "process_job": "job_functions.job_four",
+        "num_workers": 2,
+        "timeout_duration": 30
+    },
+    {
+        "name": "pipeline_name_final",
+        "input_queue": "output_queue_four",
+        "output_queue": "output_queue_final",
+        "error_queue": "task_cleanup_queue",
+        "process_job": "job_functions.job_final",
+        "num_workers": 2,
+        "timeout_duration": 600
+    }
+]

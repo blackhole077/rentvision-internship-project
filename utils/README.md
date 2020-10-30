@@ -1,0 +1,17 @@
+# Understanding the Utility Files
+## Purpose and Motivation
+Many projects grow and expand in ways that are unpredictable to developers. New features are requested suddenly, old features need revamping, the list could go on ad nauseum. As such, there always exists a small niche in which the 'mistfit' functions tend to congregate, having no real place in any core class either due to its usefulness in many places, or simply being 'too niche' to be considered integral to the overall pipeline.
+
+## How the Files are Used
+Unlike core classes or configuration files, utility files are pretty straightforward. While all the core classes are doing the heavy lifting, it falls to the functions in these files to make sure things are done as smoothly as possible. Simply put, they encapsulate all of the 'helper functions' commonly seen in any public-facing code. Their naming scheme reflects where the functions are generally used, with some indirect relationship to what the intended purpose is as a result.
+
+## Utility Files
+### Pipeline Utility Functions
+The Pipeline Utility Functions, termed `pipeline_utils`, contains many functions used throughout the entirety of the pipeline. From `job_functions`, to even the core classes like `Task`, it provides various functions that, for whatever reason, are located in this file. This ranges from wrapper functions to perform multiprocessing-friendly commands via the `Subprocessing` library, to removing spaces and other "bad characters" from file names. Every function inside this file is not only used to good effect, but has equally good potential to be used in other, newer features yet to be seen in the pipeline. Essentially, the only reason it cannot be a core class is that there's no class that could possibly encapsulate everything it does.
+
+## Adding New Utility Files
+Now unlike the other files that could be added, this one has far less considerations that need to be, well, considered before making a decision. If anything, it may just be a place where those 'handy' functions reside before manifesting into full-blown core features. But just for the sake of posterity, here are some guidelines for if a new file should be created.
+
+1. Is the utility file covering something that doesn't already overlap with existing files? This only really matters if improvements to the existing code are being done. If a wholly new feature is being created, odds are a new utility file to accompany it isn't a bad idea. However, be mindful of fragmenting the utility files. The more there are, the less useful each one is on its own.
+2. Will the functions that would comprise this utility file not be better as part of an existing file? While the first point mentions avoiding fragmentation, there is a fine balance between it and having one file with a severe glut of code. Simply take some time to make sure that whatever new functions being made are different enough to warrant making a new file altogether.
+3. Will numerous parts of the pipeline benefit from having access to the aforementioned functions? If so, it's best to place it in a common utility file, rather than making a new one. If only one or two portions need it, consider just leaving it in those scripts instead.
