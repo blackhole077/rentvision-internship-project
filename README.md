@@ -1,7 +1,7 @@
-# Understanding the Rentvision-Media-DL-Editor
+# Understanding the Project
 ## Introduction
 
-Welcome to the main page of the `rentvision-media-dl-editor` repository! This was a project developed by Jeevan Rajagopal (writer of this README) during an internship project sponsored by [RentVision](https://www.rentvision.com) spanning through most of 2020. I hope that this README will inform you of the general details surrounding this project.
+Welcome to the main page of the repository! This was a project developed by Jeevan Rajagopal (writer of this README) during an internship project sponsored by [RentVision](https://www.rentvision.com) spanning through most of 2020. I hope that this README will inform you of the general details surrounding this project.
 
 ## Purpose and Motivation
 
@@ -56,7 +56,7 @@ Since this project was developed specifically inside of a Linux environment, the
 
 Additionally, there are several packages that must be present for the pipeline to work as intended. However, that likely exceeds the scope of this document, thus it will be omitted. 
 
-As the developer, I personally recommend the use of 'virtual environment' tools, such as **venv** or **Anaconda** to help manage different environments (and avoid catastrophic failure). A *requirements.txt* may be found within the repository to replicate the working environment for this pipeline.
+As the developer, I personally recommend the use of 'virtual environment' tools, such as **venv** or **Anaconda** to help manage different environments (and avoid catastrophic failure).
 
 As an aside, **make sure that you differentiate between Python 2.7 and Python 3.x** as this may cause errors that would otherwise not exist due to version differences. This can be checked by running `python --version` and, if that returns Python 2.7, `python3 --version`.  
 
@@ -69,11 +69,7 @@ Running the Deep Learning Pipeline is relatively straightforward. The main drive
 
      python3 manage_pipelines.py --help 
 
-to get a description of what the program does, along with the flags needed. In the case of `manage_pipelines.py`, the directory flag, marked `-d`, is an absolute file path that stops at the directory two steps above all user directories.
-
-The reason for this, is that due to the file structure at the time of development, input and output files were one step above the user directories, resulting in a file path that looked akin to this: 
-
-    path/to/directories/.../users/input|output/initials/
+to get a description of what the program does, along with the flags needed.
 
 If you intend to make use of this project, it is likely in your best interest to build your own driver function(s) to move data into the pipeline, as this driver function is somewhat specialized for this purpose.
 
@@ -101,4 +97,4 @@ Unit testing, however, remains an issue. While there are some basic tests that c
 ---
 
 # Project Results and Closing Remarks
-As my time at [RentVision](https://www.rentvision.com) comes to a close, so to does the current cycle of development for this project. I feel that, overall, the project successfully met all established requirements, including my own. Furthermore, it is not simply a successful internship project, this project is estimated to have saved roughly ***$30,000 per year*** in Media Team operational costs and has ensured that the company had scalability in performing more remote work for content creation.
+As my time at [RentVision](https://www.rentvision.com) comes to a close, so to does the current cycle of development for this project. I feel that, overall, the project successfully met all established requirements, including my own. Furthermore, it is not simply a successful internship project, this project is estimated to have saved roughly ***$30,000 per year*** in Media Team operational costs and has ensured that the company had scalability in performing more remote work for content creation by reducing the overall product turnaround time ***from 6 weeks to less than 1 week***.
