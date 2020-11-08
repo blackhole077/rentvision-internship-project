@@ -1,4 +1,9 @@
-# Understanding the Project
+# An Automation Pipeline for the Everyman
+
+## What This Project Achieved
+As my time at [RentVision](https://www.rentvision.com) I single-handedly developed a media automation pipeline for the company's media team. Furthermore, this project is estimated to have saved roughly ***$30,000 per year*** in Media Team operational costs and has ensured that the company had scalability in performing more remote work for content creation by reducing the overall product turnaround time ***from 6 weeks to less than 1 week***.
+
+
 ## Introduction
 
 Welcome to the main page of the repository! This was a project developed by Jeevan Rajagopal (writer of this README) during an internship project sponsored by [RentVision](https://www.rentvision.com) spanning through most of 2020. I hope that this README will inform you of the general details surrounding this project.
@@ -45,7 +50,7 @@ Though I as the developer know this project quite intimately, I hope that you, t
 
 ---
 
-## How to Run the Pipeline
+## Pipeline Installation
 ### Required Environment
 Before this pipeline can be used, there are a few things that must be present in your computer (termed 'environment') such that it works as intended. They are listed (unordered) as follows:
 
@@ -64,7 +69,7 @@ This guide assumes that python3 will point to Python 3.8, and therefore will be 
 
 ---
 
-### Running the Deep Learning Pipeline
+### Running the Pipeline
 Running the Deep Learning Pipeline is relatively straightforward. The main driver program for this section is titled `manage_pipelines.py`. For first-time users, run the following command:
 
      python3 manage_pipelines.py --help 
@@ -75,7 +80,12 @@ If you intend to make use of this project, it is likely in your best interest to
 
 ---
 
-## How You Could Help Improve This
+# Project Results and Closing Remarks
+As my time at [RentVision](https://www.rentvision.com) comes to a close, so to does the current cycle of development for this project. I feel that, overall, the project successfully met all established requirements, including my own. Furthermore, it is not simply a successful internship project, this project is estimated to have saved roughly ***$30,000 per year*** in Media Team operational costs and has ensured that the company had scalability in performing more remote work for content creation by reducing the overall product turnaround time ***from 6 weeks to less than 1 week***.
+
+---
+
+## Future Works and Directions
 If, for whatever reason, you find that this project is of great interest to you and feel convinced that there are things that you can do to refine this project furhter, then below are a few things I am currently slating as "future work".
 
 ### Shifting PipelineManager to have asynchronous functionality
@@ -93,8 +103,3 @@ However, this would require major overhauls to the system, as the multiprocessin
 As of now, the pipeline system works, but has a significant lack of any unit tests and annotations. Currently only basic Type Hints are in place, to allow future developers to have a better understanding of the types that variables are expected to be at various points in the code, similar to how strongly typed languages (e.g., Java, C++) exist by default. 
 
 Unit testing, however, remains an issue. While there are some basic tests that cover some of the earliest aspects of the pipeline, the coverage remains abysmal.
-
----
-
-# Project Results and Closing Remarks
-As my time at [RentVision](https://www.rentvision.com) comes to a close, so to does the current cycle of development for this project. I feel that, overall, the project successfully met all established requirements, including my own. Furthermore, it is not simply a successful internship project, this project is estimated to have saved roughly ***$30,000 per year*** in Media Team operational costs and has ensured that the company had scalability in performing more remote work for content creation by reducing the overall product turnaround time ***from 6 weeks to less than 1 week***.
